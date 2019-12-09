@@ -1,0 +1,82 @@
+#Blog
+blog:
+  name: TotoroBlog
+  version: 1.0
+  copyrightYear: 2019
+  profile: /profile/
+  addressEnabled: true
+
+#Server
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 800
+    min-spare-threads: 30
+
+#Log
+logging:
+  level:
+    vn.totoro: debug
+    org.springframework: debug
+    org.spring.springboot.dao: debug
+
+#User
+user:
+  password:
+    maxRetryCount: 5
+
+# Spring
+spring:
+  thymeleaf:
+    mode: HTML
+    encoding: UTF-8
+    cache: false
+  messages:
+    basename: ...
+  jackson:
+    time-zone: GMT+7
+    date-format: dd-MM-yyyy HH24:mm:ss
+  profiles:
+    active: druid
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
+  devtools:
+    restart:
+      enabled: true
+
+# MyBatis
+mybatis:
+  type-aliases-package: vn.totoro.blog
+  mapper-locations: classpath:mybatis/**/*Mapper.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+  check-config-location: true
+
+#PageHelper paging plugin
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+# Shiro
+shiro:
+  user:
+    login: /login
+    unauthorizedUrl: /unauth
+    indexUrl: /index
+    captchaEnabled: true
+    captchaType: math
+  cookie:
+    domain:
+    path: /
+    httpOnly: true
+    maxAge: 30
+  session:
+    expireTime: 30
+    dbSyncPeriod: 1
+    validationInterval: 10

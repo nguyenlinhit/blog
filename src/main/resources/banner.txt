@@ -1,0 +1,23 @@
+${AnsiColor.BRIGHT_BLACK}
+__________________________________________________________________________________________________________________
+
+TTTTTTTTTTTTTTTTTTTTTTT                     tttt
+T:::::::::::::::::::::T                  ttt:::t
+T:::::::::::::::::::::T                  t:::::t
+T:::::TT:::::::TT:::::T                  t:::::t
+TTTTTT  T:::::T  TTTTTooooooooooo  ttttttt:::::ttttttt      ooooooooooo  rrrrr   rrrrrrrrr     ooooooooooo
+        T:::::T     oo:::::::::::oot:::::::::::::::::t    oo:::::::::::oor::::rrr:::::::::r  oo:::::::::::oo
+        T:::::T    o:::::::::::::::t:::::::::::::::::t   o:::::::::::::::r:::::::::::::::::ro:::::::::::::::o
+        T:::::T    o:::::ooooo:::::tttttt:::::::tttttt   o:::::ooooo:::::rr::::::rrrrr::::::o:::::ooooo:::::o
+        T:::::T    o::::o     o::::o     t:::::t         o::::o     o::::or:::::r     r:::::o::::o     o::::o
+        T:::::T    o::::o     o::::o     t:::::t         o::::o     o::::or:::::r     rrrrrro::::o     o::::o
+        T:::::T    o::::o     o::::o     t:::::t         o::::o     o::::or:::::r           o::::o     o::::o
+        T:::::T    o::::o     o::::o     t:::::t    ttttto::::o     o::::or:::::r           o::::o     o::::o
+      TT:::::::TT  o:::::ooooo:::::o     t::::::tttt:::::o:::::ooooo:::::or:::::r           o:::::ooooo:::::o
+      T:::::::::T  o:::::::::::::::o     tt::::::::::::::o:::::::::::::::or:::::r           o:::::::::::::::o
+      T:::::::::T   oo:::::::::::oo        tt:::::::::::ttoo:::::::::::oo r:::::r            oo:::::::::::oo
+      TTTTTTTTTTT     ooooooooooo            ttttttttttt    ooooooooooo   rrrrrrr              ooooooooooo
+
+Spring Boot Version: ${spring-boot.version}
+Project Version: V1.0
+__________________________________________________________________________________________________________________
