@@ -1,0 +1,51 @@
+#Datasource Config
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      #Main library datasource
+      master:
+        url: jdbc:mysql://localhost:3306/totoroblog?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B7
+        username: blog
+        password: 12345678x@X
+      slave:
+        enabled: false
+        url:
+        username:
+        password:
+      #init connections
+      initialSize: 5
+      #The minimum number of connections pools
+      minIdle: 10
+      #The maximum number of connections pools
+      maxActive: 20
+      #Config timeout period for obtaining a connection
+      maxWait: 60000
+      #Detection interval to detect idle connections that need to be closed, in milliseconds
+      timeBetweenEvictionRunsMillis: 60000
+      #Config the minimum lifetime of a connection in th pool, in milliseconds
+      minEvictableIdleTimeMillis: 300000
+      #Config the maximum lifetime of a connection in th pool, in milliseconds
+      maxEvictableIdleTimeMillis: 900000
+      #Config whether the connection is valid
+      validationQuery: SELECT 1 FROM DUAL
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      webStatFilter:
+        enabled: true
+      statViewServlet:
+        enabled: true
+        #Set while list, leave all access allowed
+        allow:
+        url-pattern: /monitor/druid/*
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: true
+        wall:
+          config:
+            multi-statement-allow: true
