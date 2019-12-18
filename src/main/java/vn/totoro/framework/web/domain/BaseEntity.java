@@ -20,12 +20,12 @@ public class BaseEntity implements Serializable {
     /*Created by*/
     private String createBy;
     /*Created time */
-    @JsonFormat(pattern = "YYYY-MM-DD HH:MM:SS")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;
     /*Updated by*/
     private String updateBy;
     /*Update time*/
-    @JsonFormat(pattern = "YYYY-MM-DD HH:MM:SS")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date updateTime;
     /*Remark*/
     private String remark;
